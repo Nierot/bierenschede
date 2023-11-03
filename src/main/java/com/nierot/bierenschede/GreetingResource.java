@@ -1,7 +1,5 @@
 package com.nierot.bierenschede;
 
-import java.io.IOException;
-
 import com.nierot.bierenschede.parsers.KlaasUndKockParser;
 
 import jakarta.ws.rs.GET;
@@ -19,7 +17,7 @@ public class GreetingResource {
         KlaasUndKockParser p = new KlaasUndKockParser();
 
         try {
-            p.parse();
+            p.process();
         } catch (Exception e) {
             e.printStackTrace();
         }
